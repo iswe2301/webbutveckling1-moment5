@@ -1,0 +1,249 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="en">
+
+<!-- Sidans huvud med metainformation, CSS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp, huvudinnehåll med grid-container -->
+
+<body>
+    <main id="grid-container">
+        <!-- Header med logotyp, speciallogo för mobil -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img class="size2" src="resources/headerlogo.svg" alt="Logotype"></a>
+            </div>
+            <div id="mobilelogo"><a href="index.html"><img class="size2" src="resources/mobilelogo.svg"
+                        alt="Logotype"></a>
+            </div>
+        </header>
+
+        <!-- Hamburgermeny/NAV som visas i mobilläge med länkar till resp. sida. Anropar två funktioner vid klick. -->
+        <div class="nav" onclick="dropDownMenu(); transformMenu(this)">
+            <h4 id="menutext">MENU</h4>
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <div id="navlinks">
+            <div class="navmobile">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="navmobile">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="navmobile" id="active2">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="navmobile">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="navmobile last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+
+        <!-- Navigation i överig vy med länkar till de andra sidorna -->
+        <nav>
+            <div class="gridnav">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="gridnav">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="gridnav" id="active">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="gridnav">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="gridnav last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Huvudrubrik -->
+        <div id="mainheader">
+            <h1>WORK <span style="color: #ff5a76">&</span> EDUCATION</h1>
+        </div>
+
+        <!-- Rubrik för jobberfarenhet -->
+        <div id="work">
+            <h2 class="projects">WORK EXPERIENCE</h2>
+        </div>
+
+        <!-- Rubrik och textsektioner för respektive arbete -->
+        <div id="work1">
+            <h2>Media Producer <span style="color: #ff5a76">|</span> Standard Solutions Group</h2>
+            <h3 class="grey">2021 - ongoing</h3>
+            <p>E-learning producer. Creates and produces educational digital
+                e-learning courses for the industrial sector. Working with SCORM, HTML, CSS and responsive web design.
+            </p>
+        </div>
+
+        <div id="work2">
+            <h2>Customer Service Agent <span style="color: #ff5a76">|</span> SEB Pension & Insurance</h2>
+            <h3 class="grey">2016 - 2021</h3>
+            <p>Customer service and support for private costumers and bank offices regarding questions about pensions
+                and insurances. Licensed insurance advisor with Swedsec.</p>
+        </div>
+
+        <div id="work3" class="bullet">
+            <h2>PR-manager <span style="color: #ff5a76">|</span> Ninetone Group</h2>
+            <h3 class="grey">2019</h3>
+            <p>Internship for ten weeks at the record and management company Ninetone. The work tasks included, among
+                other things:</p>
+            <!-- O-ordnad lista -->
+            <ul>
+                <li>
+                    Create, shoot and edit video.
+                </li>
+                <li>
+                    Write press texts and artist biographies.
+                </li>
+                <li>
+                    Create content for social media and live broadcast.
+                </li>
+                <li>
+                    Pitch music to different audiences.
+                </li>
+                <li>
+                    Contact radio for booking interviews.
+                </li>
+            </ul>
+        </div>
+
+        <div id="work4">
+            <h2>Customer Service Agent <span style="color: #ff5a76">|</span> TeliaSonera</h2>
+            <h3 class="grey">2015 - 2016</h3>
+            <p>Customer service, sales and support for private costumers.</p>
+        </div>
+
+        <!-- Rubrik för utbildning -->
+        <div id="education">
+            <h2 class="projects">EDUCATION</h2>
+        </div>
+
+        <!-- Rubrik och textsektioner för respektive utbildning -->
+        <div id="education1">
+            <h2>Web development <span style="color: #ff5a76">|</span> Mid Sweden University</h2>
+            <h3 class="grey">2023 - 2025</h3>
+            <p>Ongoing education. Current education. 2-year program in web development. Will result in a Higher
+                Education Diploma with a specialization in Computer Engineering.
+            </p>
+        </div>
+
+        <div id="education2">
+            <h2>Journalism <span style="color: #ff5a76">|</span> Mid Sweden University</h2>
+            <h3 class="grey">2020 - 2021</h3>
+            <p>Postgraduate course in journalism for graduates. One-year training package to broaden and sharpen my
+                degree with journalistic skills.</p>
+        </div>
+
+        <div id="education3">
+            <h2>PR <span style="color: #ff5a76">&</span> Communication <span style="color: #ff5a76">|</span> Mid Sweden
+                University</h2>
+            <h3 class="grey">2017 - 2020</h3>
+            <p>Communication and PR program, 3-year education. Department of Media and Communication Science. Degree of
+                Bachelor of Arts with a major in Media and Communication Science.</p>
+        </div>
+
+        <div id="education4">
+            <h2>Business <span style="color: #ff5a76">|</span> Thorén Business School</h2>
+            <h3 class="grey">2011 - 2014</h3>
+            <p>High school. Business/economy program with a focus on marketing.</p>
+        </div>
+
+        <!-- Border -->
+        <div id="borderleft"></div>
+
+        <!-- Rubrik och o-ordnad lista för skills samt språk -->
+        <div id="skills">
+            <h2 class="skillsheading">SKILLS</h2>
+            <ul>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    JavaScript
+                </li>
+                <li>
+                    Git
+                </li>
+                <li>
+                    Github
+                </li>
+                <li>
+                    Figma
+                </li>
+                <li>
+                    Microsoft Office 365
+                </li>
+                <li>
+                    Facebook Business Manager
+                </li>
+                <li>
+                    Adapt Builder
+                </li>
+                <li>
+                    Wordpress
+                </li>
+                <li>
+                    Adobe Creative Cloud
+                </li>
+                <li>
+                    Final Cut Pro X
+                </li>
+                <li>
+                    Swedsec license
+                </li>
+                <li>
+                    Driving license
+                </li>
+            </ul>
+            <br>
+            <h2 class="skillsheading">LANGUAGES</h2>
+            <ul>
+                <li>
+                    Swedish - native language
+                </li>
+                <li>
+                    English - speaks fluently
+                </li>
+                <li>
+                    German - some understanding
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer med länkar till telefonnummer, email och linkedin samt copyright -->
+        <footer>
+            <div id="center">
+                <p id="footer1"><a href="tel:+46733979381">CALL<br><img class="size3" src="resources/call.svg"
+                            alt="Phone icon"></a></p>
+                <p id="footer2"><a href="mailto:isawestling@hotmail.com">E-MAIL<br><img class="size3"
+                            src="resources/email.svg" alt="E-mail icon"></a></p>
+                <p id="footer3"><a href="https://se.linkedin.com/in/isa-westling-773327151"
+                        target="_blank">FOLLOW<br><img class="size3" src="resources/follow.svg"
+                            alt="Plus sign icon"></a>
+                </p>
+                <p>&copy; 2023<br>ISA WESTLING</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>

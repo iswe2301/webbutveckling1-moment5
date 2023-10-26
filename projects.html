@@ -1,0 +1,240 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="en">
+
+<!-- Sidans huvud med metainformation, CSS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp, huvudinnehåll med grid-container -->
+
+<body>
+    <main id="grid-container">
+        <!-- Header med logotyp, speciallogo för mobil -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img class="size2" src="resources/headerlogo.svg" alt="Logotype"></a>
+            </div>
+            <div id="mobilelogo"><a href="index.html"><img class="size2" src="resources/mobilelogo.svg"
+                        alt="Logotype"></a>
+            </div>
+        </header>
+
+        <!-- Hamburgermeny/NAV som visas i mobilläge med länkar till resp. sida. Anropar två funktioner vid klick. -->
+        <div class="nav" onclick="dropDownMenu(); transformMenu(this)">
+            <h4 id="menutext">MENU</h4>
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <div id="navlinks">
+            <div class="navmobile">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="navmobile">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="navmobile">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="navmobile" id="active2">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="navmobile last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+
+        <!-- Navigation i överig vy med länkar till de andra sidorna -->
+        <nav>
+            <div class="gridnav">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="gridnav">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="gridnav">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="gridnav" id="active">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="gridnav last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Huvudrubrik -->
+        <div id="mainheader">
+            <h1>LATEST PROJECTS <span style="color: #ff5a76">...</span></h1>
+        </div>
+
+        <!-- Rubrik för projekt -->
+        <div id="project1">
+            <h2 class="projects">PROJECT | 01</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section1">
+            <h2>Explainer video</h2>
+            <h3 class="grey">Student project | 2021</h3>
+            <p>Project from the journalism program. The message was to explain the swedish legal
+                process.<br>
+                Group project with cooperation in brain storming, ideas, editing and clipping. Speaker by me.</p>
+        </div>
+
+        <!-- Video via YouTube i iframe -->
+        <div id="video1">
+            <iframe class="iframesize" src="https://www.youtube.com/embed/r7froK8N104?si=durTEd6-ThInJ3eE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Rubrik för projekt -->
+        <div id="project2">
+            <h2 class="projects">PROJECT | 02</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section2">
+            <h2>Explainer video</h2>
+            <h3 class="grey">Student project | 2021</h3>
+            <p>Project from the journalism program. A short informatic video about organ
+                donation.<br>Editing and
+                clipping by me.</p>
+        </div>
+
+        <!-- Video via YouTube i iframe -->
+        <div id="video2">
+            <iframe class="iframesize" src="https://www.youtube.com/embed/0VNS1TvrlXE?si=pJl6pliwKyt-f-x0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Rubrik för projekt -->
+        <div id="project3">
+            <h2 class="projects">PROJECT | 03</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section3">
+            <h2>News video</h2>
+            <h3 class="grey">Student project | 2020</h3>
+            <p>Project from the journalism program. A longer news video with several interviews about
+                the "dying city"
+                Sundvall.<br>
+                Reporter, speaker, editing and clipping by me.</p>
+        </div>
+
+        <!-- Video via YouTube i iframe -->
+        <div id="video3">
+            <iframe class="iframesize" src="https://www.youtube.com/embed/NUSrMtbu2_c?si=TGHSDQRRRFPcuw8R"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Rubrik för projekt -->
+        <div id="project4">
+            <h2 class="projects">PROJECT | 04</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section4">
+            <h2>News video</h2>
+            <h3 class="grey">Student project | 2020</h3>
+            <p>Project from the journalism program. A longer news video about black friday during the
+                pandemic.<br>Reporter, speaker, editing and clipping by me.</p>
+        </div>
+
+        <!-- Video via YouTube i iframe -->
+        <div id="video4">
+            <iframe class="iframesize" src="https://www.youtube.com/embed/9DooxAHfXDU?si=EV82FNpe6dsxoW-U"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Rubrik för projekt -->
+        <div id="project5">
+            <h2 class="projects">PROJECT | 05</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section5">
+            <h2>Radio reportage</h2>
+            <h3 class="grey">Student project | 2020</h3>
+            <p>Project from the journalism program. A radio reportage with the focus on diffirent
+                sounds (speaker,
+                background, interview etc) with a person "in work".<br>Reporter, speaker, editing and clipping by me.
+            </p>
+        </div>
+
+        <!-- Bild och ljudklipp med backuptext om ljudet inte fungerar -->
+        <div id="audio"><img class="size2" src="resources/audioimg.jpg"
+                alt="Picture of Louise working at SEB Pension & Insurance">
+            <audio controls>
+                <source src="resources/audio.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Rubrik för projekt -->
+        <div id="project6">
+            <h2 class="projects">PROJECT | 06</h2>
+        </div>
+
+        <!-- Sektion för projekt -->
+        <div id="section6">
+            <h2>Media <span style="color: #ff5a76">&</span> communication science study</h2>
+            <h3 class="grey">Degree project | 2020</h3>
+            <p>Google is the world's largest search engine and a medium that has an enormous power to
+                be able to
+                influence human perception and its view of reality through the internet. The information and knowledge
+                that people take a part of through Google, somehow becomes a matter of course and is seen as the true
+                and the normal. If only a certain group of people are allowed to be included on Google, it becomes a
+                problem.<br><br>The purpose of the study is to investigate whether Google Images contributes to the
+                promotion
+                of the whiteness norm and gender stereotypes.
+            </p>
+        </div>
+
+        <!-- PDF-dokument infogat genom iframe, visas i Google PDF viewer -->
+        <div id="PDF"><iframe id="pdfsize"
+                src="https://docs.google.com/gview?url=http://www.diva-portal.org/smash/get/diva2:1445190/FULLTEXT01.pdf&embedded=true">
+            </iframe>
+        </div>
+
+        <!-- Footer med länkar till telefonnummer, email och linkedin samt copyright -->
+        <footer>
+            <div id="center">
+                <p id="footer1"><a href="tel:+46733979381">CALL<br><img class="size3" src="resources/call.svg"
+                            alt="Phone icon"></a></p>
+                <p id="footer2"><a href="mailto:isawestling@hotmail.com">E-MAIL<br><img class="size3"
+                            src="resources/email.svg" alt="E-mail icon"></a></p>
+                <p id="footer3"><a href="https://se.linkedin.com/in/isa-westling-773327151"
+                        target="_blank">FOLLOW<br><img class="size3" src="resources/follow.svg"
+                            alt="Plus sign icon"></a>
+                </p>
+                <p>&copy; 2023<br>ISA WESTLING</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

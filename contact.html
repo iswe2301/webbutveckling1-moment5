@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="en">
+
+<!-- Sidans huvud med metainformation, CSS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp, huvudinnehåll med grid-container -->
+
+<body>
+    <main id="grid-container">
+        <!-- Header med logotyp, speciallogo för mobil -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img class="size2" src="resources/headerlogo.svg" alt="Logotype"></a>
+            </div>
+            <div id="mobilelogo"><a href="index.html"><img class="size2" src="resources/mobilelogo.svg"
+                        alt="Logotype"></a>
+            </div>
+        </header>
+
+        <!-- Hamburgermeny/NAV som visas i mobilläge med länkar till resp. sida. Anropar två funktioner vid klick. -->
+        <div class="nav" onclick="dropDownMenu(); transformMenu(this)">
+            <h4 id="menutext">MENU</h4>
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <div id="navlinks">
+            <div class="navmobile">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="navmobile">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="navmobile">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="navmobile">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="navmobile last" id="active2">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+
+        <!-- Navigation i överig vy med länkar till de andra sidorna -->
+        <nav>
+            <div class="gridnav">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="gridnav">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="gridnav">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="gridnav">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="gridnav last" id="active">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Rubrik med paragraf -->
+        <div id="mainheader2">
+            <h1>GET IN TOUCH <span style="color: #ff5a76">!</span></h1>
+            <p>You can reach me by sending an <a href="mailto:isawestling@hotmail.com">e-mail</a> or by filling out the
+                form below.</p>
+        </div>
+
+        <!-- Formulär -->
+        <form action="mailto:isawestling@hotmail.com" method="post" enctype="text/plain">
+            <!-- Grupperar ihop element i formuläret -->
+            <fieldset>
+                <!-- Rubriken för gruppen av element, radbryt -->
+                <legend>Contact me </legend><br>
+                <!-- Rubrik för namn, obligatorisk att svara på, text-input med placeholder. -->
+                <label for="name">Name </label>
+                <input id="name" name="name" placeholder="Firstname Lastname" required="" type="text"
+                    autocomplete="on"><br><br>
+                <!-- Rubrik för epost, obligatorisk att svara på, text-input med placeholder. -->
+                <label for="email">Email </label><input id="email" name="email" placeholder="name@domain.com"
+                    required="" type="email" autocomplete="email"><br><br>
+                <!-- Rubrik för telefonnummer, text-input med placeholder. -->
+                <label for="phone">Phone </label><input id="phone" name="phone" placeholder="+46XX XXX XX XX" type="tel"
+                    autocomplete="tel"><br><br>
+                <!-- Rubrik för meddelande -->
+                <label for="message">Message </label><br>
+                <!-- Textinmatning för frisvar, obligatorisk -->
+                <textarea id="message" name="message" required=""></textarea><br>
+                <!-- Knapp för skicka och nollställ -->
+                <label for="submit">Send Email </label>
+                <input type="submit" id="submit" value="Submit"><br>
+                <label for="reset">Reset Data </label>
+                <input type="reset" id="reset" value="Reset">
+            </fieldset>
+        </form>
+
+        <!-- Bild -->
+        <div id="contactimg"><img class="size1" src="resources/isa.png" alt="Picture of me"></div>
+
+        <!-- Footer med länkar till telefonnummer, email och linkedin samt copyright -->
+        <footer>
+            <div id="center">
+                <p id="footer1"><a href="tel:+46733979381">CALL<br><img class="size3" src="resources/call.svg"
+                            alt="Phone icon"></a></p>
+                <p id="footer2"><a href="mailto:isawestling@hotmail.com">E-MAIL<br><img class="size3"
+                            src="resources/email.svg" alt="E-mail icon"></a></p>
+                <p id="footer3"><a href="https://se.linkedin.com/in/isa-westling-773327151"
+                        target="_blank">FOLLOW<br><img class="size3" src="resources/follow.svg"
+                            alt="Plus sign icon"></a>
+                </p>
+                <p>&copy; 2023<br>ISA WESTLING</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>

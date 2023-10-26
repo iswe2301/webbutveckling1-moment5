@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="en">
+
+<!-- Sidans huvud med metainformation, CSS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp, huvudinnehåll med grid-container -->
+
+<body>
+    <main id="grid-container">
+        <!-- Header med logotyp, speciallogo för mobil -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img class="size2" src="resources/headerlogo.svg" alt="Logotype"></a>
+            </div>
+            <div id="mobilelogo"><a href="index.html"><img class="size2" src="resources/mobilelogo.svg"
+                        alt="Logotype"></a>
+            </div>
+        </header>
+
+        <!-- Hamburgermeny/NAV som visas i mobilläge med länkar till resp. sida. Anropar två funktioner vid klick. -->
+        <div class="nav" onclick="dropDownMenu(); transformMenu(this)">
+            <h4 id="menutext">MENU</h4>
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <div id="navlinks">
+            <div class="navmobile">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="navmobile" id="active2">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="navmobile">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="navmobile">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="navmobile last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+
+        <!-- Navigation i överig vy med länkar till de andra sidorna -->
+        <nav>
+            <div class="gridnav">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="gridnav" id="active">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="gridnav">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="gridnav">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="gridnav last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Huvudrubrik och underrubrik, speciell färg för frågetecken-->
+        <div id="mainheader">
+            <h1>WHO AM I <span style="color: #ff5a76">?</span></h1>
+            <h2>Hi<span style="color: #ff5a76">,</span> nice to see you there <span style="color: #ff5a76">!</span></h2>
+        </div>
+
+        <!-- Två sektioner med text -->
+        <div id="sectionA1">
+            <p>Here you have a creative thinker who is curious about everything spelled with "new knowledge".
+            </p>
+            <p>As a person, I tend to categorize myself as quite "blue". Despite my creative side, I am a real problem
+                solver who loves to delve into things to find the best solutions. If you are looking for a person who is
+                creative, independent and analytical - you have found the right one!</p><br>
+            <p>I have a bachelor's degree in media and communication science. After my degree, I chose to study a year
+                in journalism as I wanted to increase my creative and practical experiences. After two years of working
+                as an e-learning producer, I'm now back at school thanks to my new-found interest - web development!</p>
+        </div>
+        <div id="sectionA2">
+            <p>I love working and learning new things, but of course there are other things that also make me happy. I
+                like to exercise, travel, hike and spend time with my partner and our dog. We prefer to spend our free
+                time traveling around and discovering new countries in our van.</p><br>
+            <p>Don't forget to check out my <a href="resume.html">resume</a> above to see my previous experience and
+                education.
+                Also, have a look at my
+                latest <a href="projects.html">projects</a> to see my portfolio!</p><br>
+            <p>Thank you for taking the time to read all the way here! I hope that you got a sense of who I
+                am and what I can bring to your business.</p><br>
+            <p>With kind regards,</p>
+        </div>
+
+        <!-- Bild och signatur -->
+        <div id="signature2">
+            <img class="size2" src="resources/signature.svg" alt="My signature">
+        </div>
+        <div id="aboutimg"><img class="size1" src="resources/isa.png" alt="Picture of me"></div>
+
+        <!-- Footer med länkar till telefonnummer, email och linkedin samt copyright -->
+        <footer>
+            <div id="center">
+                <p id="footer1"><a href="tel:+46733979381">CALL<br><img class="size3" src="resources/call.svg"
+                            alt="Phone icon"></a></p>
+                <p id="footer2"><a href="mailto:isawestling@hotmail.com">E-MAIL<br><img class="size3"
+                            src="resources/email.svg" alt="E-mail icon"></a></p>
+                <p id="footer3"><a href="https://se.linkedin.com/in/isa-westling-773327151"
+                        target="_blank">FOLLOW<br><img class="size3" src="resources/follow.svg"
+                            alt="Plus sign icon"></a>
+                </p>
+                <p>&copy; 2023<br>ISA WESTLING</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>

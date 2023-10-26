@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="en">
+
+<!-- Sidans huvud med metainformation, CSS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp, huvudinnehåll med grid-container -->
+
+<body>
+    <main id="grid-container">
+        <!-- Header med logotyp, speciallogo för mobil -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img class="size2" src="resources/headerlogo.svg" alt="Logotype"></a>
+            </div>
+            <div id="mobilelogo"><a href="index.html"><img class="size2" src="resources/mobilelogo.svg"
+                        alt="Logotype"></a>
+            </div>
+        </header>
+
+        <!-- Hamburgermeny/NAV som visas i mobilläge med länkar till resp. sida. Anropar två funktioner vid klick. -->
+        <div class="nav" onclick="dropDownMenu(); transformMenu(this)">
+            <h4 id="menutext">MENU</h4>
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <div id="navlinks" class="flex">
+            <div class="navmobile" id="active2">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="navmobile">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="navmobile">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="navmobile">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="navmobile last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+
+        <!-- Navigation i överig vy med länkar till de andra sidorna -->
+        <nav>
+            <div class="gridnav" id="active">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="gridnav">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="gridnav">
+                <a href="resume.html">RESUME</a>
+            </div>
+            <div class="gridnav">
+                <a href="projects.html">PROJECTS</a>
+            </div>
+            <div class="gridnav last">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Bild/flipcard med rubrik och text -->
+        <div id="gridimg" class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="size1" src="resources/isa.png" alt="Picture of me">
+                </div>
+                <div class="flip-card-back">
+                    <h1>ISA WESTLING</h1>
+                    <p>Degree of Bachelor of Arts with a major in Media and Communication Science.<br><br>
+                        Journalism program for academics.<br><br>
+                        Higher Education Diploma with specialization in Computer Engineering (JUNE 2025).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rubriker med knappar & länkar till övriga sidor -->
+        <div id="heading1">
+            <h1>HELLO<span style="color: #ff5a76">,</span></h1>
+        </div>
+
+        <!-- Animation -->
+        <div class="typewrite">
+            <span class="text first">I'M A </span>
+            <span class="text second"></span>
+        </div>
+
+        <div id="heading2">
+            <h2>a bit more about me <span style="color: #ff5a76">:</span></h2>
+        </div>
+        <div id="button1">
+            <p class="button"><a href="about.html">ABOUT ME</a></p>
+        </div>
+        <div id="button2">
+            <p class="button"><a href="resume.html">MY RESUME</a></p>
+        </div>
+        <div id="button3">
+            <p class="button"><a href="projects.html">MY PROJECTS</a></p>
+        </div>
+
+        <!-- Sektion med rubrik och text samt länk till kontaktsidan -->
+        <div id="heading3">
+            <h3>Welcome to my portfolio!</h3>
+        </div>
+        <div id="section">
+            <p>My name is Isa and I am a 28 year old web developer student. Click on the <span id="btn">buttons</span> <span id="nvg">navigation</span> <span id="mnu">menu</span> above to learn more
+                about me.<br><br>
+                Do not hesitate to <a href="contact.html">reach out!</a><br><br>
+                Best regards,</p>
+        </div>
+
+        <!-- Bild för signatur -->
+        <div id="signature">
+            <img class="size2" src="resources/signature.svg" alt="My signature">
+        </div>
+
+        <!-- Bild när flipcard inte visas -->
+        <div id="noflipimg" class="size4"></div>
+
+        <!-- Footer med länkar till telefonnummer, email och linkedin samt copyright -->
+        <footer>
+            <div id="center">
+                <p id="footer1"><a href="tel:+46733979381">CALL<br><img class="size3" src="resources/call.svg"
+                            alt="Phone icon"></a></p>
+                <p id="footer2"><a href="mailto:isawestling@hotmail.com">E-MAIL<br><img class="size3"
+                            src="resources/email.svg" alt="E-mail icon"></a></p>
+                <p id="footer3"><a href="https://se.linkedin.com/in/isa-westling-773327151"
+                        target="_blank">FOLLOW<br><img class="size3" src="resources/follow.svg"
+                            alt="Plus sign icon"></a>
+                </p>
+                <p>&copy; 2023<br>ISA WESTLING</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
