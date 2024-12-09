@@ -42,7 +42,7 @@ if (typewriteEl) {
         }, 4000);
         // Kod körs efter 8s
         setTimeout(() => {
-            textEl.innerHTML = "MEDIA PRODUCER"
+            textEl.innerHTML = "WEB PRODUCER"
         }, 8000);
     }
     // Anropar funktion
