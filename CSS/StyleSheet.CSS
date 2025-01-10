@@ -1298,6 +1298,24 @@ footer {
     align-items: center;
 }
 
+#img9 {
+    grid-column: 1 / span 3;
+    grid-row: 20 / span 2;
+    align-items: center;
+}
+
+#img10 {
+    grid-column: 1 / span 3;
+    grid-row: 22 / span 2;
+    align-items: center;
+}
+
+#img11 {
+    grid-column: 1 / span 3;
+    grid-row: 24 / span 2;
+    align-items: center;
+}
+
 .projects {
     background-color: black;
     color: white;
@@ -1380,6 +1398,33 @@ footer {
     text-align: center;
 }
 
+#project9 {
+    grid-column: 4 / span 3;
+    grid-row: 20;
+    font-weight: bold;
+    margin-left: 10%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#project10 {
+    grid-column: 4 / span 3;
+    grid-row: 22;
+    font-weight: bold;
+    margin-left: 10%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#project11 {
+    grid-column: 4 / span 3;
+    grid-row: 24;
+    font-weight: bold;
+    margin-left: 10%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
 #section1 {
     grid-column: 4 / span 3;
     grid-row: 5;
@@ -1432,6 +1477,27 @@ footer {
 #section8 {
     grid-column: 4 / span 3;
     grid-row: 19;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#section9 {
+    grid-column: 4 / span 3;
+    grid-row: 21;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#section10 {
+    grid-column: 4 / span 3;
+    grid-row: 23;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#section11 {
+    grid-column: 4 / span 3;
+    grid-row: 25;
     margin-left: 10%;
     margin-bottom: 10%;
 }
@@ -1499,7 +1565,10 @@ audio {
     #section5,
     #section6,
     #section7,
-    #section8 {
+    #section8,
+    #section9,
+    #section10,
+    #section11 {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -1514,7 +1583,10 @@ audio {
     #project5,
     #project6,
     #project7,
-    #project8 {
+    #project8,
+    #project9,
+    #project10,
+    #project11 {
         margin: 0;
     }
 
