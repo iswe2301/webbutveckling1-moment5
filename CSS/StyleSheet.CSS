@@ -1316,6 +1316,18 @@ footer {
     align-items: center;
 }
 
+#img12 {
+    grid-column: 1 / span 3;
+    grid-row: 26 / span 2;
+    align-items: center;
+}
+
+#img13 {
+    grid-column: 1 / span 3;
+    grid-row: 28 / span 2;
+    align-items: center;
+}
+
 .projects {
     background-color: black;
     color: white;
@@ -1425,6 +1437,24 @@ footer {
     text-align: center;
 }
 
+#project12 {
+    grid-column: 4 / span 3;
+    grid-row: 26;
+    font-weight: bold;
+    margin-left: 10%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#project13 {
+    grid-column: 4 / span 3;
+    grid-row: 28;
+    font-weight: bold;
+    margin-left: 10%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
 #section1 {
     grid-column: 4 / span 3;
     grid-row: 5;
@@ -1502,6 +1532,20 @@ footer {
     margin-bottom: 10%;
 }
 
+#section12 {
+    grid-column: 4 / span 3;
+    grid-row: 27;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#section13 {
+    grid-column: 4 / span 3;
+    grid-row: 29;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
 .iframesize {
     width: 100%;
     aspect-ratio: 16/9;
@@ -1568,7 +1612,9 @@ audio {
     #section8,
     #section9,
     #section10,
-    #section11 {
+    #section11,
+    #section12,
+    #section13 {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -1586,7 +1632,9 @@ audio {
     #project8,
     #project9,
     #project10,
-    #project11 {
+    #project11,
+    #project12,
+    #project13 {
         margin: 0;
     }
 
